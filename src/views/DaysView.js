@@ -62,7 +62,7 @@ export default class DaysView extends React.Component {
 		let rows = [[], [], [], [], [], []];
 
 		let startDate = date.clone().subtract( 1, 'months');
-		startDate.date( startDate.daysInMonth() ).startOf('week');
+		startDate.date( startDate.daysInMonth() ).startOf('isoWeek');
 
 		let endDate = startDate.clone().add( 42, 'd' );
 		let i = 0;
@@ -148,7 +148,7 @@ function getRow( rows, day ) {
  * @return {array} A list with the shortname of the days
  */
 function getDaysOfWeek( locale ) {
-	const first = locale.firstDayOfWeek();
+	const first = 1;
 	let dow = [];
 	let i = 0;
 

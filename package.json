@@ -1,6 +1,6 @@
 {
   "name": "react-datetime",
-  "version": "3.0.4",
+  "version": "3.0.5",
   "description": "A lightweight but complete datetime picker React.js component",
   "homepage": "https://github.com/arqex/react-datetime",
   "repository": {
@@ -117,9 +117,6 @@
     "prop-types": "^15.5.7"
   },
   "pre-commit": [
-    "notify-pre-commit-hook",
-    "lint",
-    "test:all"
   ],
   "jest": {
     "roots": [
